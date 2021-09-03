@@ -1,5 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Monoton&family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.Loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Loader-disapear {
+  animation: vanish 1s forwards;
+}
+
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/*--------------- Navbar ---------------*/
+
+.navbar-brand {
+  margin-left: 1em;
+  font-size: 24px;
+  font-family: "Monoton", cursive;
+}
+
+.navbar-brand:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.navbar-nav .nav-item a {
+  color: crimson;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+#navbarNav .nav-resume {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+}
+
+#navbarNav .nav-resume button {
+  background: #ff0050;
+  outline: none;
+  font-family: "Monoton", cursive;
+  border: #ff0050;
+}
+
+#navbarNav .nav-resume button:hover {
+  color: #ff0050;
+  background-color: white;
+  border: 2px solid #ff0050;
+}
+
+@media (max-width: 768px) {
+  #navbarNav {
+    padding-left: 1em;
+  }
+  #navbarNav .nav-resume {
+    padding-left: 0;
+  }
+  #navbarNav .nav-resume {
+    display: flex;
+    justify-content: center;
+    margin-right: 1em;
+  }
+  #navbarNav .nav-resume button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar-brand {
+    margin-left: 4em;
+  }
+  .navbar-nav .nav-item {
+    padding-right: 1em;
+  }
+  .navbar-nav .nav-item:last-child {
+    padding-right: 0;
+  }
+
+  .navbar-nav .nav-item a {
+    color: crimson;
+    width: 140px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 50px;
+  }
+
+  .navbar-nav .nav-item a:hover {
+    color: white;
+    background-color: #ff0050;
+    border-radius: 50px;
+  }
 }

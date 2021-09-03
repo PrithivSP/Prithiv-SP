@@ -15,6 +15,53 @@
   </head>
   <body>
     
+    <!---------- Navbar ---------->
+
+    <div class="navBar">
+        <nav class="navbar navbar-expand-lg navbar-transparent bg-transparent">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Prithiv SP</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">O</span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">My work</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">My skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  
+                </ul>
+
+                <div class="nav-resume">
+                    <button class="btn btn-primary">Resume</button>
+                </div>
+              </div>
+              
+            </div>
+          </nav>
+    </div>
+
+    <div class="Loader">
+        <img src="https://c.tenor.com/pgO8hZgOW5AAAAAM/loading-bar.gif" alt="">
+    </div>
+
+    <script>
+        let loader = document.querySelector('.Loader');
+        window.addEventListener('load', loadingAnimation);
+        function loadingAnimation () {
+            loader.classList.add('Loader-disapear');
+        }
+        // loader.addEventListener()
+    </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
