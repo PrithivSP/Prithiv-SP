@@ -17,6 +17,10 @@ html::-webkit-scrollbar-thumb {
   border-radius: 6px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*--------- Preloader ---------*/
 
 .Loader {
@@ -195,4 +199,68 @@ html::-webkit-scrollbar-thumb {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
   color: white;
+}
+
+/*---------- About Section ----------*/
+
+.About {
+  margin-top: 100px;
+}
+
+.About div .About-heading h1 {
+  text-align: center;
+}
+
+.About-subHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.About div h4 {
+  text-align: center;
+}
+
+.About div hr {
+  width: 40px;
+  opacity: 1;
+  color: #ff0050;
+  border-top: 4px solid #ff0050;
+}
+
+.About-content {
+  margin-top: 50px;
+}
+
+.About-content div:last-child h3 {
+  position: relative;
+  margin-top: 20px;
+}
+
+.About-content div:last-child h3 span {
+  color: #ff0050;
+}
+
+.About-content div:last-child h5 span {
+  color: #ff0050;
+}
+
+.About-content p {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.About-content .About-resume button {
+  background: #ff0050;
+  outline: none;
+  font-family: "Monoton", cursive;
+  border: #ff0050;
+}
+
+.About-content .About-resume button:hover {
+  color: #ff0050;
+  background-color: white;
+  border: 2px solid #ff0050;
 }
