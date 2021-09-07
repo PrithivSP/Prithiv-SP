@@ -70,6 +70,7 @@ html {
   margin-left: 1em;
   font-size: 24px;
   font-family: "Monoton", cursive;
+  color: #41bfb1;
 }
 
 .navbar-brand:hover {
@@ -263,4 +264,93 @@ html {
   color: #ff0050;
   background-color: white;
   border: 2px solid #ff0050;
+}
+
+/*---------- MySkills Section ----------*/
+
+.MySkills {
+  margin-top: 100px;
+}
+
+.MySkills div .MySkills-heading h3 {
+  text-align: center;
+}
+
+.MySkills div .MySkills-heading hr {
+  width: 90px;
+  opacity: 1;
+  color: #ff0050;
+  border-top: 4px solid #ff0050;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.MySkills-content {
+  margin-top: 60px;
+}
+
+.MySkills-content div h4 span {
+  color: #ff0050;
+}
+
+.MySkills-content div p {
+  position: relative;
+  margin-top: 30px;
+  padding-right: 30px;
+}
+
+.MySkills-content div .bars {
+  margin-bottom: 15px;
+}
+
+.MySkills-content div .bars .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
+.MySkills-content div .bars .info span {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.MySkills-content div .bars .bars-line {
+  position: relative;
+  height: 5px;
+  border-radius: 5px;
+  width: 100%;
+  background: gray;
+  border-radius: 3px;
+}
+
+.MySkills-content div .bars .bars-line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  background: #ff0050;
+}
+
+.MySkills-content div .bars .bars-Html::before {
+  width: 90%;
+}
+
+.MySkills-content div .bars .bars-Css::before {
+  width: 75%;
+}
+
+.MySkills-content div .bars .bars-Bootstrap::before {
+  width: 80%;
+}
+
+.MySkills-content div .bars .bars-javascript::before {
+  width: 50%;
+}
+
+.MySkills-content div .bars .bars-react::before {
+  width: 20%;
 }
