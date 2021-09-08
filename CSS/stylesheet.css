@@ -354,24 +354,24 @@ html {
   width: 20%;
 }
 
-/*---------- Testimonals Section ----------*/
-.Testimonals {
+/*---------- Testimonials Section ----------*/
+.Testimonials {
   background: rgb(0, 0, 0);
   margin-top: 100px;
 }
 
-.Testimonals div .Testimonals-heading {
+.Testimonials div .Testimonials-heading {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.Testimonals div .Testimonals-heading h3 {
+.Testimonials div .Testimonials-heading h3 {
   position: relative;
   text-align: center;
   color: #ffffff;
 }
 
-.Testimonals div .Testimonals-heading hr {
+.Testimonials div .Testimonials-heading hr {
   width: 90px;
   opacity: 1;
   color: #ff0050;
@@ -380,33 +380,33 @@ html {
   margin-right: auto;
 }
 
-.Testimonals div .row {
+.Testimonials div .row {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.Testimonals-card {
+.Testimonials-card {
   background: rgb(255, 255, 255);
   border-radius: 5px;
   /* border: 2px solid #ff0050; */
 }
 
-.Testimonals-card .card-icon {
+.Testimonials-card .card-icon {
   padding-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.Testimonals-card .card-icon .quote {
+.Testimonials-card .card-icon .quote {
   margin-left: auto;
   margin-right: auto;
   color: #ff0050;
   font-size: 30px;
 }
 
-.Testimonals-card p {
+.Testimonials-card p {
   margin-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
@@ -415,14 +415,14 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
-.Testimonals-card h4 {
+.Testimonials-card h4 {
   text-align: center;
   margin-top: 5px;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
 }
 
-.Testimonals-card h5 {
+.Testimonials-card h5 {
   text-align: center;
   margin-top: 5px;
   font-family: "Josefin Sans", sans-serif;
@@ -431,7 +431,7 @@ html {
   padding-bottom: 30px;
 }
 
-.Testimonals div .row:last-child {
+.Testimonials div .row:last-child {
   margin-top: 15px;
   padding-bottom: 30px;
 }
