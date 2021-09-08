@@ -353,3 +353,85 @@ html {
 .MySkills-content div .bars .bars-react::before {
   width: 20%;
 }
+
+/*---------- Testimonals Section ----------*/
+.Testimonals {
+  background: rgb(0, 0, 0);
+  margin-top: 100px;
+}
+
+.Testimonals div .Testimonals-heading {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.Testimonals div .Testimonals-heading h3 {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+}
+
+.Testimonals div .Testimonals-heading hr {
+  width: 90px;
+  opacity: 1;
+  color: #ff0050;
+  border-top: 4px solid #ff0050;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Testimonals div .row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Testimonals-card {
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  /* border: 2px solid #ff0050; */
+}
+
+.Testimonals-card .card-icon {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Testimonals-card .card-icon .quote {
+  margin-left: auto;
+  margin-right: auto;
+  color: #ff0050;
+  font-size: 30px;
+}
+
+.Testimonals-card p {
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.Testimonals-card h4 {
+  text-align: center;
+  margin-top: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+}
+
+.Testimonals-card h5 {
+  text-align: center;
+  margin-top: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+
+.Testimonals div .row:last-child {
+  margin-top: 15px;
+  padding-bottom: 30px;
+}
