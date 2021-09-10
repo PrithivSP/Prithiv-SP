@@ -435,3 +435,258 @@ html {
   margin-top: 15px;
   padding-bottom: 30px;
 }
+
+/*---------- Testimonials Section ----------*/
+
+.MyProjects {
+  margin-top: 100px;
+  padding-bottom: 160px;
+}
+
+.MyProjects div .MyProjects-heading h3 {
+  text-align: center;
+}
+
+.MyProjects div .MyProjects-heading hr {
+  width: 90px;
+  opacity: 1;
+  color: #ff0050;
+  border-top: 4px solid #ff0050;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Card-box {
+  position: relative;
+}
+
+.Card-description h5 {
+  color: #ff0050;
+  font-family: "Josefin Sans", sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.Card-description p {
+  font-family: "Poppins", sans-serif;
+}
+
+.Card-description .Card-Button {
+  width: 130px;
+}
+
+.Card-description .Card-Button a {
+  width: 100%;
+  text-decoration: none;
+  color: white;
+}
+
+.Card-description .Card-Button a:hover {
+  color: #ff0050;
+}
+
+.Card-description .Card-Button button {
+  width: 100%;
+  background-color: #ff0050;
+  color: white;
+  border: 2px solid #ff0050;
+}
+
+.Card-description .Card-Button button:hover {
+  background: transparent;
+  border: 2px solid #ff0050;
+  color: #ff0050;
+}
+
+@media (max-width: 1024px) {
+  .Card-box {
+    position: relative;
+    padding-top: 100px;
+  }
+
+  .Card-box .Card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Card-description h5 {
+    text-align: center;
+  }
+
+  .Card-description p {
+    text-align: center;
+  }
+
+  .Card-description .Card-Button {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/*---------- Footer Section ----------*/
+
+.Footer {
+  background-color: black;
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+
+.Footer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Footer .Footer-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Footer .Footer-heading h1 {
+  border: 2px solid #ff0050;
+  padding: 5px;
+  color: #ff0050;
+  font-family: "Monoton", cursive;
+  font-size: 24px;
+  box-shadow: 6px 8px 20px 0px;
+  width: 170px;
+}
+
+.Footer .Footer-CopyRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.Footer .Footer-CopyRight p {
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(163, 163, 163);
+}
+
+.Footer .Footer-CopyRight p span {
+  color: #ff0050;
+}
+
+@media (max-width: 768px) {
+  .Footer .Footer-heading {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+/*---------- Contact Section ----------*/
+
+.Contact {
+  padding-bottom: 50px;
+}
+
+.Contact div .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Contact .Contact-heading h2 {
+  text-align: center;
+  color: white;
+}
+
+.Contact .Contact-heading hr {
+  width: 60px;
+  opacity: 1;
+  color: #ff0050;
+  border-top: 4px solid #ff0050;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Contact div .Contact-content div h3 {
+  text-align: center;
+  padding-top: 20px;
+  color: #ff0050;
+}
+
+.Contact div .Contact-content div p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.Contact div .Contact-content div .Contact-btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Contact-btn-box .Contact-btn {
+  width: 130px;
+  margin-top: 20px;
+  color: #ff0050;
+  border: 2px solid #ff0050;
+  transition: 0.5s;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.Contact-btn-box .Contact-btn:hover {
+  background-color: #ff0050;
+  border: 2px solid #ff0050;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .Contact div .Contact-content div .Contact-btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Contact div .Contact-content div p {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .Contact div .Contact-content div p {
+    width: 500px;
+  }
+
+  .Contact .Contact-SocialIcons {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+}
+
+.Contact .Contact-SocialIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.Contact .Contact-SocialIcons a {
+  color: rgb(163, 163, 163);
+
+  text-decoration: none;
+  font-size: 35px;
+  /* margin-left: 10px;
+  margin-right: 10px; */
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.Contact .Contact-SocialIcons a:hover {
+  color: #ff0050;
+  font-size: 60px;
+}
