@@ -70,7 +70,7 @@ html {
   margin-left: 1em;
   font-size: 24px;
   font-family: "Monoton", cursive;
-  color: #41bfb1;
+  color: #ff0050;
 }
 
 .navbar-brand:hover {
@@ -103,6 +103,7 @@ html {
   outline: none;
   font-family: "Monoton", cursive;
   border: #ff0050;
+  transition: 0.3s;
 }
 
 #navbarNav .nav-resume button:hover {
@@ -146,6 +147,7 @@ html {
     font-size: 18px;
     text-align: center;
     border-radius: 50px;
+    transition: 0.3s;
   }
 
   .navbar-nav .nav-item a:hover {
@@ -201,6 +203,12 @@ html {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .hero-text {
+    text-align: center;
+  }
+}
+
 /*---------- About Section ----------*/
 
 .About {
@@ -209,6 +217,8 @@ html {
 
 .About div .About-heading h1 {
   text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5em;
 }
 
 .About-subHeading {
@@ -312,6 +322,7 @@ html {
 .MySkills-content div .bars .info span {
   font-weight: 500;
   font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .MySkills-content div .bars .bars-line {
@@ -335,11 +346,15 @@ html {
 }
 
 .MySkills-content div .bars .bars-Html::before {
-  width: 90%;
+  width: 85%;
 }
 
 .MySkills-content div .bars .bars-Css::before {
   width: 75%;
+}
+
+.MySkills-content div .bars .bars-sass::before {
+  width: 70%;
 }
 
 .MySkills-content div .bars .bars-Bootstrap::before {
@@ -347,11 +362,31 @@ html {
 }
 
 .MySkills-content div .bars .bars-javascript::before {
-  width: 50%;
+  width: 60%;
 }
 
 .MySkills-content div .bars .bars-react::before {
   width: 20%;
+}
+
+.MySkills-content div .bars .bars-figma::before {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .MySkills-content div h4 {
+    text-align: center;
+  }
+  .MySkills-content div p {
+    /* text-align: center; */
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .row-content2 {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+  }
 }
 
 /*---------- Testimonials Section ----------*/
@@ -389,7 +424,8 @@ html {
 .Testimonials-card {
   background: rgb(255, 255, 255);
   border-radius: 5px;
-  /* border: 2px solid #ff0050; */
+  border: 2px solid #ff0050;
+  padding-left: 20px;
 }
 
 .Testimonials-card .card-icon {
@@ -445,6 +481,9 @@ html {
 
 .MyProjects div .MyProjects-heading h3 {
   text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 570;
 }
 
 .MyProjects div .MyProjects-heading hr {
@@ -530,6 +569,7 @@ html {
   background-color: black;
   margin-bottom: 0;
   padding-top: 10px;
+  position: relative;
 }
 
 .Footer .row {
@@ -604,6 +644,7 @@ html {
 }
 
 .Contact div .Contact-content div h3 {
+  font-family: "Josefin Sans", sans-serif;
   text-align: center;
   padding-top: 20px;
   color: #ff0050;
@@ -628,9 +669,27 @@ html {
   margin-top: 20px;
   color: #ff0050;
   border: 2px solid #ff0050;
-  transition: 0.5s;
   font-size: 18px;
   font-weight: 600;
+  transition: 0.3s;
+}
+
+.Contact-btn-box .Contact-btn:hover {
+  animation: buttonHover 1s infinite;
+  font-weight: 900;
+}
+@keyframes buttonHover {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .Contact-btn-box .Contact-btn:hover {
@@ -672,11 +731,8 @@ html {
 
 .Contact .Contact-SocialIcons a {
   color: rgb(163, 163, 163);
-
   text-decoration: none;
   font-size: 35px;
-  /* margin-left: 10px;
-  margin-right: 10px; */
   width: 60px;
   height: 60px;
   border-radius: 100%;
@@ -689,4 +745,5 @@ html {
 .Contact .Contact-SocialIcons a:hover {
   color: #ff0050;
   font-size: 60px;
+  transform: rotate(360deg);
 }
