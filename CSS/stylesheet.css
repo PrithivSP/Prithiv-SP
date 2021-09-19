@@ -6,6 +6,15 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary: #ff0050;
+  --secondary: #fff;
+}
+
+body {
+  background-color: var(--secondary);
+}
+
 /*--------- ScrollBar ---------*/
 
 html::-webkit-scrollbar {
@@ -13,7 +22,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: linear-gradient(transparent, #ff0050);
+  background: linear-gradient(transparent, var(--primary));
   border-radius: 6px;
 }
 
@@ -27,7 +36,7 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: white;
+  background-color: var(--secondary);
   height: 100%;
   width: 100%;
   display: flex;
@@ -47,30 +56,30 @@ html {
 }
 
 ::selection {
-  background: #ff0050;
-  color: white;
+  background: var(--primary);
+  color: var(--secondary);
 }
 
 /*--------------- Navbar ---------------*/
 
 .navbar {
-  background: white;
+  background: var(--secondary);
 }
 
 .fixed-top {
-  background: #ffffff;
-  color: #ffffff;
+  background: var(--secondary);
+  color: var(--secondary);
 }
 
 .fixed-top .navbar-brand {
-  color: #ff0050;
+  color: var(--primary);
 }
 
 .navbar-brand {
   margin-left: 1em;
   font-size: 24px;
   font-family: "Monoton", cursive;
-  color: #ff0050;
+  color: var(--primary);
 }
 
 .navbar-brand:hover {
@@ -99,17 +108,17 @@ html {
 }
 
 #navbarNav .nav-resume button {
-  background: #ff0050;
+  background: var(--primary);
   outline: none;
   font-family: "Monoton", cursive;
-  border: #ff0050;
+  border: var(--primary);
   transition: 0.3s;
 }
 
 #navbarNav .nav-resume button:hover {
-  color: #ff0050;
-  background-color: white;
-  border: 2px solid #ff0050;
+  color: var(--primary);
+  background-color: var(--secondary);
+  border: 2px solid var(--primary);
 }
 
 @media (max-width: 768px) {
@@ -151,8 +160,8 @@ html {
   }
 
   .navbar-nav .nav-item a:hover {
-    color: white;
-    background-color: #ff0050;
+    color: var(--secondary);
+    background-color: var(--primary);
     border-radius: 50px;
   }
 }
@@ -163,7 +172,7 @@ html {
   position: relative;
   width: 100%;
   height: 90vh;
-  background: #ff0050;
+  background: var(--primary);
 }
 
 .Banner-wave {
@@ -189,7 +198,7 @@ html {
 .hero-text div h1 span {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 900;
-  color: white;
+  color: var(--secondary);
 }
 
 .hero-text div h3 {
@@ -200,7 +209,7 @@ html {
 .hero-text div h3 span {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
-  color: white;
+  color: var(--secondary);
 }
 
 @media (max-width: 768px) {
@@ -235,8 +244,8 @@ html {
 .About div hr {
   width: 40px;
   opacity: 1;
-  color: #ff0050;
-  border-top: 4px solid #ff0050;
+  color: var(--primary);
+  border-top: 4px solid var(--primary);
 }
 
 .About-content {
@@ -249,11 +258,11 @@ html {
 }
 
 .About-content div:last-child h3 span {
-  color: #ff0050;
+  color: var(--primary);
 }
 
 .About-content div:last-child h5 span {
-  color: #ff0050;
+  color: var(--primary);
 }
 
 .About-content p {
@@ -263,16 +272,16 @@ html {
 }
 
 .About-content .About-resume button {
-  background: #ff0050;
+  background: var(--primary);
   outline: none;
   font-family: "Monoton", cursive;
-  border: #ff0050;
+  border: var(--primary);
 }
 
 .About-content .About-resume button:hover {
-  color: #ff0050;
-  background-color: white;
-  border: 2px solid #ff0050;
+  color: var(--primary);
+  background-color: var(--secondary);
+  border: 2px solid var(--primary);
 }
 
 /*---------- MySkills Section ----------*/
@@ -288,8 +297,8 @@ html {
 .MySkills div .MySkills-heading hr {
   width: 90px;
   opacity: 1;
-  color: #ff0050;
-  border-top: 4px solid #ff0050;
+  color: var(--primary);
+  border-top: 4px solid var(--primary);
   margin-left: auto;
   margin-right: auto;
 }
@@ -299,7 +308,7 @@ html {
 }
 
 .MySkills-content div h4 span {
-  color: #ff0050;
+  color: var(--primary);
 }
 
 .MySkills-content div p {
@@ -342,7 +351,7 @@ html {
   left: 0;
   top: 0;
   border-radius: 10px;
-  background: #ff0050;
+  background: var(--primary);
 }
 
 .MySkills-content div .bars .bars-Html::before {
@@ -371,6 +380,10 @@ html {
 
 .MySkills-content div .bars .bars-figma::before {
   width: 50%;
+}
+
+.MySkills-content div .bars .bars-honest::before {
+  width: 90%;
 }
 
 @media (max-width: 768px) {
@@ -409,8 +422,8 @@ html {
 .Testimonials div .Testimonials-heading hr {
   width: 90px;
   opacity: 1;
-  color: #ff0050;
-  border-top: 4px solid #ff0050;
+  color: var(--primary);
+  border-top: 4px solid var(--primary);
   margin-left: auto;
   margin-right: auto;
 }
@@ -424,8 +437,6 @@ html {
 .Testimonials-card {
   background: rgb(255, 255, 255);
   border-radius: 5px;
-  border: 2px solid #ff0050;
-  padding-left: 20px;
 }
 
 .Testimonials-card .card-icon {
@@ -438,7 +449,7 @@ html {
 .Testimonials-card .card-icon .quote {
   margin-left: auto;
   margin-right: auto;
-  color: #ff0050;
+  color: var(--primary);
   font-size: 30px;
 }
 
@@ -475,7 +486,7 @@ html {
 /*---------- Testimonials Section ----------*/
 
 .MyProjects {
-  margin-top: 100px;
+  margin-top: 80px;
   padding-bottom: 160px;
 }
 
@@ -486,11 +497,19 @@ html {
   font-weight: 570;
 }
 
+.MyProjects-content1 {
+  margin-top: 40px;
+}
+
+.MyProjects-content2 {
+  margin-top: 60px;
+}
+
 .MyProjects div .MyProjects-heading hr {
   width: 90px;
   opacity: 1;
-  color: #ff0050;
-  border-top: 4px solid #ff0050;
+  color: var(--primary);
+  border-top: 4px solid var(--primary);
   margin-left: auto;
   margin-right: auto;
 }
@@ -499,10 +518,14 @@ html {
   position: relative;
 }
 
+.Card-img img {
+  border-radius: 4px;
+}
+
 .Card-description h5 {
-  color: #ff0050;
+  color: var(--primary);
   font-family: "Josefin Sans", sans-serif;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 
@@ -517,30 +540,33 @@ html {
 .Card-description .Card-Button a {
   width: 100%;
   text-decoration: none;
-  color: white;
+  color: var(--secondary);
 }
 
 .Card-description .Card-Button a:hover {
-  color: #ff0050;
+  color: var(--primary);
 }
 
 .Card-description .Card-Button button {
   width: 100%;
-  background-color: #ff0050;
-  color: white;
-  border: 2px solid #ff0050;
+  background-color: var(--primary);
+  color: var(--secondary);
+  border: 2px solid var(--primary);
 }
 
 .Card-description .Card-Button button:hover {
   background: transparent;
-  border: 2px solid #ff0050;
-  color: #ff0050;
+  border: 2px solid var(--primary);
+  color: var(--primary);
 }
 
 @media (max-width: 1024px) {
+  .MyProjects-content2 {
+    margin-top: 10px;
+  }
   .Card-box {
     position: relative;
-    padding-top: 100px;
+    padding-top: 50px;
   }
 
   .Card-box .Card-img {
@@ -585,9 +611,9 @@ html {
 }
 
 .Footer .Footer-heading h1 {
-  border: 2px solid #ff0050;
+  border: 2px solid var(--primary);
   padding: 5px;
-  color: #ff0050;
+  color: var(--primary);
   font-family: "Monoton", cursive;
   font-size: 24px;
   box-shadow: 6px 8px 20px 0px;
@@ -607,7 +633,7 @@ html {
 }
 
 .Footer .Footer-CopyRight p span {
-  color: #ff0050;
+  color: var(--primary);
 }
 
 @media (max-width: 768px) {
@@ -631,14 +657,14 @@ html {
 
 .Contact .Contact-heading h2 {
   text-align: center;
-  color: white;
+  color: var(--secondary);
 }
 
 .Contact .Contact-heading hr {
   width: 60px;
   opacity: 1;
-  color: #ff0050;
-  border-top: 4px solid #ff0050;
+  color: var(--primary);
+  border-top: 4px solid var(--primary);
   margin-left: auto;
   margin-right: auto;
 }
@@ -647,7 +673,7 @@ html {
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
   padding-top: 20px;
-  color: #ff0050;
+  color: var(--primary);
 }
 
 .Contact div .Contact-content div p {
@@ -667,8 +693,8 @@ html {
 .Contact-btn-box .Contact-btn {
   width: 130px;
   margin-top: 20px;
-  color: #ff0050;
-  border: 2px solid #ff0050;
+  color: var(--primary);
+  border: 2px solid var(--primary);
   font-size: 18px;
   font-weight: 600;
   transition: 0.3s;
@@ -693,9 +719,9 @@ html {
 }
 
 .Contact-btn-box .Contact-btn:hover {
-  background-color: #ff0050;
-  border: 2px solid #ff0050;
-  color: white;
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  color: var(--secondary);
 }
 
 @media (max-width: 1024px) {
@@ -743,7 +769,7 @@ html {
 }
 
 .Contact .Contact-SocialIcons a:hover {
-  color: #ff0050;
+  color: var(--primary);
   font-size: 60px;
   transform: rotate(360deg);
 }
