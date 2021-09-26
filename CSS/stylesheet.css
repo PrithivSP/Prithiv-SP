@@ -118,10 +118,26 @@ html {
   transition: 0.3s;
 }
 
+#navbarNav .nav-resume button:focus {
+  outline: none;
+}
+
 #navbarNav .nav-resume button:hover {
   color: var(--primary);
   background-color: var(--secondary);
   border: 2px solid var(--primary);
+}
+
+.resume-modal-btn {
+  background: var(--primary);
+  outline: none;
+  border: var(--primary);
+  transition: 0.3s;
+}
+
+.resume-modal-btn:hover {
+  color: var(--primary);
+  background-color: var(--secondary);
 }
 
 @media (max-width: 768px) {
@@ -284,6 +300,15 @@ html {
   position: relative;
   margin-top: 30px;
   margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.About-content p span {
+  color: var(--primary);
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
 }
 
 .About-content .About-resume button {

@@ -72,7 +72,7 @@
           </ul>
 
           <div class="nav-resume">
-            <button class="btn btn-primary">Resume</button>
+            <button id="btn-resume" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">Resume</button>
           </div>
 
           <!-- <div class="ThemeChangeBox">
@@ -80,10 +80,29 @@
               Change
             </button>
           </div> -->
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Error</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Sorry😵, File not Found. Try Again Later !
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn resume-modal-btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
   </div>
+
+  
   <!---------- Navbar section ends ---------->
 
 
@@ -108,7 +127,9 @@
           <h3>Hello, I am <span> Prithiv SP</span></h3>
           <h5>I am a <span>Front-End Developer</span></h5>
           <p>
-            who is passionate about programming. To achieve my dreams I have started to learn web development by myself. Currently, I am plotting to learn Fullstack Development.
+            who is passionate about programming. To achieve my dreams I have started to learn web development by myself. Currently, I am plotting to learn Fullstack Development. I belive in
+            <br>
+            <span>"Hardwork beats talent when talent fails to work hard".</span>
           <div class="About-resume">
             <button class="btn btn-primary">My CV</button>
           </div>
