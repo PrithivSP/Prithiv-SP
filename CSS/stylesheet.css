@@ -128,7 +128,12 @@ html {
   border: 2px solid var(--primary);
 }
 
+.modal-footer {
+  position: relative;
+}
+
 .resume-modal-btn {
+  /* position: absolute; */
   background: var(--primary);
   outline: none;
   border: var(--primary);
