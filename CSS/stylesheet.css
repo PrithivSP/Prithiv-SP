@@ -60,7 +60,6 @@ html {
   color: var(--secondary);
 }
 
-
 /*--------------- Navbar ---------------*/
 
 .navbar {
@@ -284,7 +283,6 @@ html {
   margin-left: 10px;
 } */
 
-
 .about-photo-section {
   display: flex;
   justify-content: center;
@@ -317,7 +315,6 @@ html {
   margin-top: 30px;
   margin-bottom: 30px;
   font-family: "Poppins", sans-serif;
-
 }
 
 .About-content p span {
@@ -337,7 +334,7 @@ html {
 .About-content .About-resume button:hover {
   color: var(--primary);
   background-color: var(--secondary);
-  border: 2px solid var(--primary);
+  outline: 2px solid var(--primary);
 }
 
 /*---------- MySkills Section ----------*/
