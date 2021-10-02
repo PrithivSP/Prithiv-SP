@@ -284,6 +284,17 @@ html {
   margin-left: 10px;
 } */
 
+
+.about-photo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-photo {
+  border-radius: 50%;
+}
+
 .About-content {
   margin-top: 50px;
 }
