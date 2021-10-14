@@ -328,7 +328,7 @@ html {
 .about-photo {
   border-radius: 50%;
   width: 70%;
-  margin-left: 100px;
+  /* margin-left: 100px; */
 }
 
 .About-content {
@@ -337,7 +337,7 @@ html {
 }
 
 .About-content-child {
-  margin-left: 100px;
+  /* margin-left: 100px; */
 }
 
 .About-content div:last-child h3 {
