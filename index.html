@@ -75,9 +75,17 @@
             <a target="_blank" href="./assests/Pdf/Prithiv's Resume.pdf">
               <button id="btn-resume" class="btn btn-primary">Resume</button>
             </a>
+
+            
             
             <!-- <button id="btn-resume" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">Resume</button> -->
           </div>
+
+          <div class="ThemeChanger">
+            <button id="BtnThemeChanger" class="btn" onclick="Themechanger()"><i class="fas fa-volleyball-ball"></i></button>
+          </div>
+
+          
 
           <!-- <div class="ThemeChangeBox">
             <button id="ThemeChangeBtn" class="ThemeChangeBtn btn btn-primary" type="button">
@@ -106,11 +114,11 @@
       </div>
       <div class="About-content row">
         <div class="col-sm-4 about-photo-section">
-          <img width="200" height="200" class="about-photo img-fluid"
-            src="./assests/images/20211002_114257.jpg" alt="Yaa it's me" />
+          <img class="about-photo img-fluid"
+            src="/assests/images/20211002_114257.jpg" alt="Yaa it's me" />
         </div>
 
-        <div class="col-sm-6">
+        <div class="col-sm-6 About-content-child">
           <h3>Hello, I am <span> Prithiv SP</span></h3>
           <h5>I am a <span>Front-End Developer</span></h5>
           <p>
@@ -522,6 +530,26 @@
         navBar.classList.remove("fixed-top");
       }
     });
+
+    // Theme Changer
+
+    function Themechanger () {
+      let BgColorArray = ['red', 'green', 'chartreuse', '#890B3B', '#00818A', '#E4491C'];
+      let gettingColors = BgColorArray[Math.floor(Math.random() * BgColorArray.length)];
+      document.documentElement.style.setProperty('--primary', `${gettingColors}`);
+      let BtnThemeChanger = document.getElementById('BtnThemeChanger');
+      BtnThemeChanger.classList.add('BtnAnimation');
+      setTimeout(() => {
+        BtnThemeChanger.classList.remove('BtnAnimation')
+      }, 1500);
+      
+    }
+
+    // let Colors = ['red', 'yellow', 'orange', 'green', 'violet'];
+
+    // document.documentElement.style.setProperty('--primary', `${Colors[0]}`);
+
+    // console.log(document.documentElement);
 
     // Theme Shifting
 
